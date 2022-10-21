@@ -18,8 +18,6 @@ for (var i = 0; i < names.length; i++) {
 
 })();
 
-
-
 (function(window) {
 	var speakWord = "Good Bye";
 	var byeSpeaker = function (name) {
@@ -27,5 +25,16 @@ for (var i = 0; i < names.length; i++) {
 	}
 	
 	window.byeSpeaker = byeSpeaker;
+
+})(window);
+
+
+(function(window) {
+	var speakWord = "Hello";
+	var helloSpeaker = function (name) {
+		console.log(speakWord + " " + name);
+	}
+
+	window.helloSpeaker = helloSpeaker;
 
 })(window);
